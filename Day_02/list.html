@@ -1,0 +1,81 @@
+<html>
+
+<head>
+	<title>Hover</title>
+	<style type="text/css">
+		#MainUL {
+			height: 22vh;
+			display: flex;
+			justify-content: space-between;
+			padding: 50px;
+			background-color: rgb(255, 207, 96);
+			list-style: none;
+			font-size: larger;
+			border: 1px solid black;
+		}
+
+		#MainUL li ul li {
+			display: none;
+		}
+
+		#MainUL li:hover ul li {
+			display: block;
+			color: rgb(245, 16, 138);
+		}
+
+		#MainUL li:hover ul li ul li {
+			display: none;
+		}
+
+		#MainUL li ul li:hover ul li {
+			display: block;
+			color: rgb(92, 50, 234);
+		}
+
+		#MainUL li ul li:hover ul li ul li {
+			display: none;
+		}
+
+		#MainUL li ul li ul li:hover ul li {
+			display: block;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<ul id="MainUL">
+		<li>Google
+			<ul>
+				<li>Gmail
+					<ul>
+						<li>Sign Up</li>
+						<li>Sign In</li>
+					</ul>
+				</li>
+				<li>Youtube</li>
+				<li>Google_Drive</li>
+				<li>Google_Map</li>
+			</ul>
+		</li>
+		<li>Facebook</li>
+		<li>Microsoft
+			<ul>
+				<li>Bing</li>
+				<li>Linked_In</li>
+			</ul>
+		</li>
+		<li>MSN</li>
+		<li>Amazon
+			<ul>
+				<li>AWS</li>
+				<li>Ecommerce</li>
+				<li>AI-ML</li>
+			</ul>
+		</li>
+	</ul>
+
+</body>
+
+</html>
